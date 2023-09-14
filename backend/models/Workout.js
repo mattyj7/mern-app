@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const Schmea = mongoose.Schema;
-const workoutSchema = new Schema(
+const workoutSchema = new Schmea(
   {
     title: {
       type: String,
