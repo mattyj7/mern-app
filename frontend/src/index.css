@@ -7,6 +7,10 @@
   --error: #e7195a;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
+}
+
 body {
   background: #f1f1f1;
   margin: 0;
@@ -17,7 +21,7 @@ header {
   background: white;
 }
 
-header .container {
+.container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -33,6 +37,44 @@ header a {
 
 .pages {
   max-width: 1400px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2/3 width and 1/3 width */
+  gap: 20px;
   padding: 20px;
   margin: 0 auto;
+}
+
+.workout-details {
+  width: auto;
+  max-height: 250px;
+  padding: 20px 0px 10px 20px;
+  background: whitesmoke;
+  margin: 0 0 10px 0;
+}
+
+.create {
+  background: whitesmoke;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+
+}
+
+form {
+    text-align: left; /* Reset text alignment for labels and inputs */
+    width: auto; /* Optional: Adjust the maximum width of the form */
+}
+
+label {
+    margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
