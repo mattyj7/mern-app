@@ -10,6 +10,7 @@ const Home = () => {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts");
       const json = await response.json();
+      console.log(response.status, json);
 
       if (response.ok) {
         setWorkouts(json);
